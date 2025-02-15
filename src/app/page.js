@@ -1,5 +1,6 @@
 'use client';
 
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 import ServiceSection from "@/components/ServiceSection";
@@ -16,11 +17,13 @@ const page = () => {
     }
   };
 
+
   return (
     <div>
       <NavBar />
       <Hero scrollToSection={scrollToSection} />
       <ServiceSection ref={body1Ref} />
+      <Footer />
     </div>
   )
 }
