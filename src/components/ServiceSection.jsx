@@ -1,7 +1,7 @@
 'use client';
 
 import React, { forwardRef } from 'react'
-import { Fan, Building2, Divide } from 'lucide-react'
+import { Fan, Building2 } from 'lucide-react'
 
 const ServiceSection = forwardRef((props, ref) => {
     return (
@@ -16,7 +16,7 @@ const ServiceSection = forwardRef((props, ref) => {
                         <h3 className="mb-2 text-xl font-bold">AC Maintenance & Service</h3>
                         <p className="text-center text-gray-600 ">
                             Professional AC maintenance, repair, and installation services for residential and commercial
-                            properties.
+                            properties. 
                         </p>
                     </div>
                 </div>
@@ -24,9 +24,9 @@ const ServiceSection = forwardRef((props, ref) => {
                 <div className="transform transition-transform hover:scale-[1.03] border border-gray-300 rounded-md cursor-pointer">
                     <div className="flex flex-col items-center p-6">
                         <Building2 className="mb-4 h-12 w-12 text-[#125a77]" />
-                        <h3 className="mb-2 text-xl font-bold">Building Construction</h3>
+                        <h3 className="mb-2 text-xl font-bold">Building Contracting</h3>
                         <p className="text-center text-gray-600 ">
-                            Complete building construction services with expert planning, design, and execution.
+                            Complete building contracting services with expert planning, design, and execution.
                         </p>
                     </div>
                 </div>
