@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import { Outfit } from "next/font/google";
+import { motion } from "framer-motion";
 
 const poppins = Outfit({
     subsets: ["latin"],
@@ -11,13 +12,20 @@ const poppins = Outfit({
 const Hero = ({ scrollToSection }) => {
     return (
         <div className='w-full h-screen flex flex-col justify-center items-center px-5'>
-            <Image
-                src="/logo.png"
-                alt="logo"
-                width={200}
-                height={200}
-                className='sm:h-[180px] sm:w-[180px] object-cover'
-            />
+
+            <motion.div
+                initial={{ rotateY: 180 }} // Start flipped
+                animate={{ rotateY: 0 }} // Flip to normal
+                transition={{ duration: 1, ease: "easeInOut" }} // Smooth effect
+            >
+                <Image
+                    src="/logo4.png"
+                    alt="logo"
+                    width={180}
+                    height={180}
+                    className='relative z-10 object-cover'
+                />
+            </motion.div>
             <div className=''>
                 <h1 className={`text-2xl  sm:text-4xl lg:text-5xl font-bold text-gray-950 mt-5 ${poppins.className} text-center`}>Homezen Trading and Contracting</h1>
                 <h3 className='text-center mt-5 text-base sm:text-xl text-gray-700'>Your trusted partner for AC maintenance and comprehensive contracting solutions in Qatar</h3>

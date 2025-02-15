@@ -17,7 +17,7 @@ const page = () => {
   };
 
   return (
-    <div className="h-full ">
+    <div>
       <NavBar />
       <Hero scrollToSection={scrollToSection} />
       <ServiceSection ref={body1Ref} />

@@ -1,7 +1,9 @@
 'use client';
 
+import Image from "next/image";
 import React, { forwardRef } from 'react'
-import { Fan, Building2 } from 'lucide-react'
+import {  Building2 } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const ServiceSection = forwardRef((props, ref) => {
     return (
@@ -12,11 +14,22 @@ const ServiceSection = forwardRef((props, ref) => {
             <div className="grid gap-8 md:grid-cols-2 mt-10">
                 <div className="transform transition-transform hover:scale-[1.03] border border-gray-300 rounded-md cursor-pointer">
                     <div className="flex flex-col items-center p-6">
-                        <Fan className="mb-4 h-12 w-12 text-[#125a77]" />
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                        >
+                            <Image
+                                src="/fan.svg"
+                                alt="logo"
+                                width={48}
+                                height={48}
+                                className='relative z-10 object-cover'
+                            />
+                        </motion.div>
                         <h3 className="mb-2 text-xl font-bold">AC Maintenance & Service</h3>
                         <p className="text-center text-gray-600 ">
                             Professional AC maintenance, repair, and installation services for residential and commercial
-                            properties. 
+                            properties.
                         </p>
                     </div>
                 </div>
