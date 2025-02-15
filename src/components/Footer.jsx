@@ -30,7 +30,8 @@ const Footer = () => {
                         <Twitter className='h-5 w-5 text-[#125a77]' /> Twitter
                     </div>
                 </div>
-                <div className='sm:w-[40%] '>
+                <div className='sm:w-[40%] mt-5 sm:mt-0 '>
+                    <h5 className='text-[#125a77] font-bold'>Contact Us</h5>
                     <form className='flex flex-col gap-3'>
                         <input className='bg-gray-200 p-2 border border-gray-300 rounded-md' placeholder='Enter your email' />
                         <textarea className='bg-gray-200 p-2 border border-gray-300 rounded-md' placeholder='Enter your message' />
