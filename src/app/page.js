@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
 import NavBar from "@/components/NavBar";
+import Service from "@/components/Service";
 import ServiceSection from "@/components/ServiceSection";
 
 import React, { useRef } from 'react'
@@ -27,6 +28,7 @@ const page = () => {
       <Footer /> */}
       <NavBar />
       <Hero2 />
+      <Service />
     </div>
   )
 }

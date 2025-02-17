@@ -17,8 +17,7 @@ const Hero2 = () => {
         Expert Building Construction & AC Repair Services in Doha
         </h1>
         <p className="text-sm md:text-xl font-[300] mt-3">
-        From foundation to finishing, we provide top-quality construction and renovation, along with efficient AC maintenance and repair services to ensure durability, comfort, and optimal performance for your home or business.
-        </p>
+        From foundation to finishing, we provide top-quality construction, renovation, AC installation, and efficient AC maintenance and repair services to ensure durability, comfort, and optimal performance for your home or business.        </p>
         <div className="w-full flex flex-col md:flex-row mt-5 gap-2">
           <button className="bg-[#125a77] w-full text-white px-4 py-2 rounded-sm hover:bg-[#327691] transition duration-300">
             <Image
