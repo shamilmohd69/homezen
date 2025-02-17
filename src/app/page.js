@@ -19,7 +19,7 @@ const page = () => {
 
 
   return (
-    <div>
+    <div className="bg-[#A1E3F9]">
       <NavBar />
       <Hero scrollToSection={scrollToSection} />
       <ServiceSection ref={body1Ref} />
