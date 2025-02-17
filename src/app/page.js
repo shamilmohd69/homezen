@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Hero2 from "@/components/Hero2";
 import NavBar from "@/components/NavBar";
 import ServiceSection from "@/components/ServiceSection";
 
@@ -19,11 +20,13 @@ const page = () => {
 
 
   return (
-    <div className="bg-[#A1E3F9]">
-      <NavBar />
+    <div className="bg-[#9ACBD0]">
+      {/* 
       <Hero scrollToSection={scrollToSection} />
       <ServiceSection ref={body1Ref} />
-      <Footer />
+      <Footer /> */}
+      <NavBar />
+      <Hero2 />
     </div>
   )
 }

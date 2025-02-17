@@ -13,7 +13,8 @@ const Hero = ({ scrollToSection }) => {
     return (
         <div className='w-full h-screen flex flex-col justify-center items-center px-5'>
 
-            <motion.div
+
+            {/* <motion.div
                 initial={{ rotateY: 180 }} // Start flipped
                 animate={{ rotateY: 0 }} // Flip to normal
                 transition={{ duration: 1, ease: "easeInOut" }} // Smooth effect
@@ -25,7 +26,7 @@ const Hero = ({ scrollToSection }) => {
                     height={180}
                     className='relative z-10 object-cover'
                 />
-            </motion.div>
+            </motion.div> */}
             <div className=''>
                 <h1 className={`text-2xl  sm:text-4xl lg:text-5xl font-bold text-gray-950 mt-5 ${poppins.className} text-center`}>Homezen Trading and Contracting</h1>
                 <h3 className='text-center mt-5 text-base sm:text-xl text-gray-700'>Your trusted partner for AC maintenance and comprehensive contracting solutions in Qatar</h3>

@@ -1,14 +1,17 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import LanguageSelect from "./LanguageSelect";
-import { Menu, X } from "lucide-react"; // Importing Lucide icons
+import { Menu, X } from "lucide-react"; 
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50  bg-white border-b border-black flex items-center px-3 justify-between py-3">
-      <Image src="/logo1.png" alt="logo" width={50} height={50} />
+    <div className="fixed top-0 left-0 w-full z-50  bg-[#F2EFE7] flex items-center px-3 justify-between py-3">
+      <div className="flex items-center gap-2">
+        <Image src="/logo1.png" alt="logo" width={50} height={50} />
+        <h3 className="text-2xl font-semibold">Homezen</h3>
+      </div>
 
       {/* Desktop Menu */}
 
@@ -49,6 +52,7 @@ const NavBar = () => {
         </ul>
       </div>
 
+      {/* Overlay (Click to close sidebar) */}
       {isOpen && (
         <div onClick={() => setIsOpen(false)} className="fixed inset-0 bg-black bg-opacity-50 md:hidden"></div>
       )}
