@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import LanguageSelect from "./LanguageSelect";
-import { Menu, X } from "lucide-react"; 
+import { Menu, X } from "lucide-react";
 
-const NavBar = () => {
+const NavBar = ({ scrollToSection }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -17,12 +17,9 @@ const NavBar = () => {
 
       <div className="hidden md:flex gap-5">
         <ul className="flex gap-8 text-lg font-semibold">
-          {["Home", "Services", "About", "Contact"].map((item) => (
-            <li key={item} className="relative cursor-pointer transition-all duration-300 ease-in-out hover:text-gray-700">
-              {item}
-              <span className="absolute left-0 bottom-0 w-0 h-1 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
-            </li>
-          ))}
+          <li className="cursor-pointer" onClick={() => scrollToSection('body1')}>Home</li>
+          <li className="cursor-pointer" onClick={() => scrollToSection('body2')}>Services</li>
+          <li className="cursor-pointer" onClick={() => scrollToSection('body3')}>About</li>
         </ul>
         <LanguageSelect />
       </div>
@@ -44,11 +41,9 @@ const NavBar = () => {
           </button>
         </div>
         <ul className="flex flex-col gap-6 text-lg p-4">
-          {["Home", "Services", "About", "Contact"].map((item) => (
-            <li key={item} onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-gray-700 transition-all duration-300">
-              {item}
-            </li>
-          ))}
+          <li className="cursor-pointer" onClick={() => { scrollToSection('body1'); setIsOpen(false)}}>Home</li>
+          <li className="cursor-pointer" onClick={() => {scrollToSection('body2'); setIsOpen(false)}}>Services</li>
+          <li className="cursor-pointer" onClick={() => {scrollToSection('body3'); setIsOpen(false)}}>About</li>
         </ul>
       </div>
 
