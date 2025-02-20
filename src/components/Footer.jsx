@@ -20,8 +20,7 @@ const Footer = () => {
         >
           <h3 className="text-xl font-semibold mb-4">About Us</h3>
           <p className="text-gray-300 leading-relaxed">
-            We provide top-notch AC maintenance, repair, and installation
-            services across Doha, ensuring comfort all year round.
+          We provide top-notch AC maintenance, repair, and installation services across Doha, ensuring year-round comfort. Additionally, we specialize in building construction and renovation, delivering high-quality craftsmanship to bring your vision to life.
           </p>
         </motion.div>
 
