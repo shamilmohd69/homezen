@@ -1,7 +1,7 @@
 'use client';
 
 import About from "@/components/About";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer1";
 import Hero2 from "@/components/Hero2";
 import NavBar from "@/components/NavBar";
 import Service from "@/components/Service";

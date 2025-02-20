@@ -51,7 +51,7 @@ const Footer = () => {
         >
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
           <div className="flex gap-4">
-            <a
+            <a 
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
