@@ -55,7 +55,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-10 flex items-center justify-center bg-white">
+      <div className="py-10 flex items-center justify-center bg-[#F2EFE7]">
         <Counter />
       </div>
 

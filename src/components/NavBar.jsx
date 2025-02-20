@@ -33,7 +33,7 @@ const NavBar = ({ scrollToSection }) => {
 
 
       {/* Mobile Sidebar */}
-      <div className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out md:hidden z-50`}>
+      <div className={`fixed top-0 right-0 h-full w-64 bg-[#F2EFE7] shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out md:hidden z-50`}>
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="text-xl font-semibold">Menu</h2>
           <button onClick={() => setIsOpen(false)} className="text-2xl">
